@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import HeaderComp from './comp/HeaderComp';
 import MainComp from './comp/MainComp';
 import FooterComp from './comp/FooterComp';
+import AboutComp from './comp/AboutComp';
 
 function App() {
   return (

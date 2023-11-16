@@ -2,6 +2,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import front from "../asset/front.jpg"
 import TypeComp from "./TypeComp";
 import ServiceComp from "./ServiceComp";
+import AboutComp from "./AboutComp";
 
 export default function MainComp() {
   return (
@@ -16,6 +17,9 @@ export default function MainComp() {
         </Row>
         <Row className="mb-3">
             <ServiceComp />
+        </Row>
+        <Row>
+            <AboutComp />
         </Row>
     </div>
   )
