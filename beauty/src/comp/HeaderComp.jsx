@@ -3,7 +3,16 @@ import logo from '../logo_transparent.png';
 import wechat from '../wechat-36.svg';
 import WechatComp from "./WechatComp";
 
-export default function HeaderComp() {
+export default function HeaderComp({mainRef, serviceRef, aboutRef}) {
+
+    const handleScroll = ( ref ) => {
+        window.scrollTo({
+            top: ref.offsetTop,
+            left: 0,
+            behavior: "smooth",
+        })
+    }
+
   return (
     <Navbar expand='large' className="bg-purple bg-gradient text-white bg-body-tertiary">
         <Row className="w-100 align-items-center">
@@ -14,24 +23,27 @@ export default function HeaderComp() {
                 <Navbar.Brand className="mx-auto fs-1 fst-italic fw-bolder"> 美容美发 </Navbar.Brand>
             </Col>
             <Col xs={3}>
+            <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
                 <Navbar.Brand className="mx-auto">
-                    {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />  
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link>Home</Nav.Link>
-                            <Nav.Link>Location</Nav.Link>
-                            <Nav.Link>Location</Nav.Link>
+                        <Nav className="flex-row">
+                            <Nav.Item>
+                                <Nav.Link onClick={() => handleScroll(mainRef.current)}>主页</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link onClick={() => handleScroll(serviceRef.current)}>服务</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link onClick={() => handleScroll(aboutRef.current)}>关于</Nav.Link>
+                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
-                     */}
-                    <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" justify className="flex-row">
-                        <Tab eventkey="home" title="主页">Home</Tab>
-                        <Tab eventkey="home" title="地址">Location</Tab>
-                        <Tab eventkey="home" title="关于">About</Tab>
-                    </Tabs>
+                    
                 </Navbar.Brand>
             </Container>
+            </Navbar>
             </Col>
             <Col xs={1}>
                 <Image src={wechat} fluid style={{width:'30px'}} className="me-1"/>

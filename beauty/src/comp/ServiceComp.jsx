@@ -1,8 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-export default function ServiceComp() {
+export default function ServiceComp({serviceRef}) {
   return (
-    <Container className="container-fluid text-dark my-2 bg-service">
+    <Container ref={serviceRef} className="container-fluid text-dark my-2 bg-service">
         <Row className="my-5">
             <h1>服务</h1>
         </Row>

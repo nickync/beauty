@@ -4,23 +4,17 @@ import TypeComp from "./TypeComp";
 import ServiceComp from "./ServiceComp";
 import AboutComp from "./AboutComp";
 
-export default function MainComp() {
+export default function MainComp({ mainRef }) {
   return (
-    <div className="container-fluid mt-5 ">
-        <Row className="align-items-center">
-            <Col xs={8}>
+    <div ref={mainRef} className="container-fluid mt-5">
+        <div className="align-items-center justify-content-center row flex-wrap">
+            <Col xs={6}>
                 <Image src={front} fluid roundedCircle/>
             </Col>
             <Col xs={4}>
                 <TypeComp />
             </Col>
-        </Row>
-        <Row className="mb-3">
-            <ServiceComp />
-        </Row>
-        <Row>
-            <AboutComp />
-        </Row>
+        </div>
     </div>
   )
 }
