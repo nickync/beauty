@@ -11,12 +11,12 @@ export default function WechatComp() {
     const handleShow = () => setShow(true);
 
   return (
-    <div className='row'>
+    <div className='d-flex flex-row flex-wrap align-items-center justify-content-center'>
       <div>
-        <Image src={wechat} fluid style={{width:'30px'}} className="me-1"/>
+        <Image src={wechat} fluid style={{width:'2rem'}} className="me-1"/>
       </div>
       <div>
-        <Button variant="light" onClick={handleShow}>
+        <Button variant="light" className="px-0" onClick={handleShow}>
           微信
         </Button>
       </div>

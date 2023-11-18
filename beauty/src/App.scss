@@ -5,11 +5,24 @@
 }
 
 .bg-purple {
-  background-color: #ffffff;
+  background-color: #df1c1c;
 }
 
 .bg-service {
   background-color: hsla(156, 6%, 83%, 0.9);
+}
+
+.header-btn {
+  color: rgb(13, 12, 12) !important;
+  box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.header-btn:hover {
+  box-shadow: inset 200px 0 0 0 #2f2f2f;
+  color: white !important;
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+  border-radius: 25px;
 }
 
 @import '~bootstrap/scss/bootstrap';
