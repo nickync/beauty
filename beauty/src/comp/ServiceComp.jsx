@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function ServiceComp({serviceRef}) {
   return (
-    <Container ref={serviceRef} className="container-fluid text-dark my-5 py-2 bg-service">
+    <Container ref={serviceRef} className="flex-wrap text-dark my-5 py-2 bg-service" fluid>
         <Row className="my-5">
             <h1>服务</h1>
         </Row>

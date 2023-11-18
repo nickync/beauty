@@ -25,4 +25,16 @@
   border-radius: 25px;
 }
 
+@media only screen and (max-width: 600px) {
+  .section1 {
+    flex-direction: column;
+  } 
+  .section1-text {
+    width: 90% !important;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    // padding-bottom: 4rem;
+  }
+}
+
 @import '~bootstrap/scss/bootstrap';
