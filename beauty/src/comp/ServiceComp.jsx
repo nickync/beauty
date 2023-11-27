@@ -7,16 +7,20 @@ export default function ServiceComp({serviceRef}) {
             <h1>服务</h1>
         </Row>
         <Row className="py-3">
-            <Col xs={4}>服务1</Col>
-            <Col xs={8}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at saepe dicta officia minima consectetur ad repellendus, temporibus nihil repudiandae, veritatis impedit laboriosam rem in tempore! Doloremque consequatur provident quidem.</Col>
+            <Col xs={4} className="service-header">美发</Col>
+            <Col xs={8}>理发， 烫发， 染发， 盘发</Col>
         </Row>
         <Row className="py-3">
-            <Col xs={8}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cupiditate. Repellendus, quis delectus architecto mollitia neque quia saepe? Ipsa odit, rerum nemo error maxime delectus veniam illo? Ad, non corporis.</Col>
-            <Col xs={4}>服务2</Col>
+            <Col xs={8}>吹风造型， 养发（生发）， 新娘跟妆， 形象设计， 皮肤护理</Col>
+            <Col xs={4} className="service-header">养发</Col>
         </Row>
         <Row className="py-3">
-            <Col xs={4}>服务3</Col>
-            <Col xs={8}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at saepe dicta officia minima consectetur ad repellendus, temporibus nihil repudiandae, veritatis impedit laboriosam rem in tempore! Doloremque consequatur provident quidem.</Col>
+            <Col xs={4} className="service-header">美容</Col>
+            <Col xs={8}>祛痣， 点疣， 淡斑， 纹眉， 纹唇</Col>
+        </Row>
+        <Row className="py-3">
+            <Col xs={8}>烫睫毛， 纹眼线， 脱毛， 化妆， 艾灸</Col>
+            <Col xs={4} className="service-header">美容</Col>
         </Row>
     </Container>
   )

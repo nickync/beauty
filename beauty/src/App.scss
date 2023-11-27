@@ -25,13 +25,32 @@
   border-radius: 25px;
 }
 
+.swiperImg {
+  object-fit: contain;
+  width: auto;
+  height: 40rem;
+}
+
+.service-header {
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-shadow: 2px 2px #afc7dd;
+}
+
 @media only screen and (max-width: 600px) {
   .section1 {
     flex-direction: column;
   } 
+
+  .section1-slider {
+    width: 100% !important;
+  }
   .section1-text {
     width: 90% !important;
     margin-bottom: 5rem;
+
     margin-top: 2rem;
     // padding-bottom: 4rem;
   }
