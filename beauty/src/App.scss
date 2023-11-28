@@ -1,7 +1,9 @@
 .App {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: hsl(0, 0%, 0%);
+  // background-color: hsl(0, 0%, 100%);
+  background: rgb(251,181,63);
+  background: radial-gradient(circle, rgba(251,181,63,0.9486388305322129) 0%, rgba(252,70,107,1) 100%);
 }
 
 .bg-purple {
@@ -9,20 +11,24 @@
 }
 
 .bg-service {
-  background-color: hsla(156, 6%, 83%, 0.9);
+  background-color: hsla(160, 14%, 87%, 0.3);
 }
 
 .header-btn {
-  color: rgb(13, 12, 12) !important;
+  color: rgb(233, 227, 227) !important;
   box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
   transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
 }
 
 .header-btn:hover {
-  box-shadow: inset 200px 0 0 0 #2f2f2f;
-  color: white !important;
+  box-shadow: inset 200px 0 0 0 #f6f6f6;
+  color: rgb(59, 59, 59) !important;
   transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
   border-radius: 25px;
+}
+
+.wechat:hover {
+  opacity: 50%;
 }
 
 .swiperImg {
@@ -39,6 +45,21 @@
   text-shadow: 2px 2px #afc7dd;
 }
 
+.service-text {
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-shadow: 2px 2px #afc7dd;
+}
+
+.section1-text {
+  margin-bottom: 3rem;
+  height: 10rem;
+  margin-top: 3rem;
+}
+
 @media only screen and (max-width: 600px) {
   .section1 {
     flex-direction: column;
@@ -49,10 +70,9 @@
   }
   .section1-text {
     width: 90% !important;
-    margin-bottom: 5rem;
-
-    margin-top: 2rem;
-    // padding-bottom: 4rem;
+    margin-bottom: 3rem;
+    height: 10rem;
+    margin-top: 3rem;
   }
 }
 

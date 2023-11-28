@@ -12,7 +12,7 @@ export default function TypeComp() {
         style={{fontSize: '2em', display: 'inline-block'}}
         repeat={Infinity}
         cursor={true}
-        className='text-white'
+        className='text-dark'
     >
     </TypeAnimation>
   )

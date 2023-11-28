@@ -14,16 +14,16 @@ export default function HeaderComp({mainRef, serviceRef, aboutRef}) {
 
   return (
     <Container className="px-0" fluid>
-        <Navbar expand='large' className="bg-purple bg-gradient text-white bg-body-tertiary">
+        <Navbar expand='large' className="bg-dark bg-gradient text-white">
         <Row className="w-100 align-items-center">
             <Col xs={4} className="px-0">
                 <Image src={logo} fluid style={{width:"5rem"}} className=""/>
             </Col>
             <Col xs={4} className="px-0">
-                <Navbar.Brand className="mx-auto fs-1 fst-italic fw-bolder"> 美容美发 </Navbar.Brand>
+                <Navbar.Brand className="text-white mx-auto fs-1 fst-italic fw-bolder"> 黑茶妹 </Navbar.Brand>
             </Col>
             <Col xs={3} className="px-0">
-                <Navbar expand="lg" className="bg-body-tertiary" bg="dark">
+                <Navbar expand="lg" className="bg-dark bg-gradient" bg="dark">
                     <Container>
                         <Navbar.Brand className="mx-auto">
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />  
