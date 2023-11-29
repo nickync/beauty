@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 export default function AboutComp({aboutRef}) {
   return (
-    <Container ref={aboutRef} className="text-dark my-2 bg-service" fluid>
+    <Container ref={aboutRef} className="text-dark bg-service" fluid>
     <Row className="my-5">
         <h1>关于</h1>
     </Row>

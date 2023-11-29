@@ -14,7 +14,7 @@ export default function HeaderComp({mainRef, serviceRef, aboutRef}) {
 
   return (
     <Container className="px-0" fluid>
-        <Navbar expand='large' className="bg-dark bg-gradient text-white">
+        <Navbar expand='large' className="bg-header text-white">
         <Row className="w-100 align-items-center">
             <Col xs={4} className="px-0">
                 <Image src={logo} fluid style={{width:"5rem"}} className=""/>
@@ -23,7 +23,7 @@ export default function HeaderComp({mainRef, serviceRef, aboutRef}) {
                 <Navbar.Brand className="text-white mx-auto fs-1 fst-italic fw-bolder"> 黑茶妹 </Navbar.Brand>
             </Col>
             <Col xs={3} className="px-0">
-                <Navbar expand="lg" className="bg-dark bg-gradient" bg="dark">
+                <Navbar expand="lg" className="bg-transparent" bg="dark">
                     <Container>
                         <Navbar.Brand className="mx-auto">
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />  
