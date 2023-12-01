@@ -62,7 +62,7 @@
 }
 
 .mySwiper {
-  width: 90%;
+  width: 100%
 }
 
 .swiperImg {
@@ -86,7 +86,7 @@
 
   .service-con {
     width: 100%;
-    margin: 3rem 0 3rem 0;
+    flex-wrap: wrap;
   }
 
   .section1-slider {
@@ -103,6 +103,10 @@
     object-fit: cover;
     width: auto;
     height: 35rem;
+  }
+
+  .about {
+    flex-direction: column;
   }
 }
 
