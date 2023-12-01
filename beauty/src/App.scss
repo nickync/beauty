@@ -15,8 +15,8 @@
 }
 
 .bg-service {
-  background-color: hsla(160, 14%, 87%, 0.3);
-}
+  background-color: hsla(0, 0%, 100%, 0.18); 
+} 
 
 .header-btn {
   color: rgb(233, 227, 227) !important;
@@ -79,6 +79,10 @@
   color: white;
 }
 
+.service-col {
+  margin: 0 1rem 0 1rem;
+}
+
 @media only screen and (max-width: 600px) {
   .section1 {
     flex-direction: column;
@@ -103,6 +107,11 @@
     object-fit: cover;
     width: auto;
     height: 35rem;
+  }
+
+  .service-col {
+    width: 50%;
+    margin: 0 0 2rem 0;
   }
 
   .about {
