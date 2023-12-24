@@ -8,11 +8,11 @@ export default function AboutComp({aboutRef}) {
     </Row>
     <Row className="justify-content-center about">
         <Col className="my-2">
-            <Row className="justify-content-center">
+            <Row className="justify-content-center mb-3">
                 个人简介
             </Row>
-            <Row className="justify-content-center">
-                黑茶妹
+            <Row className="justify-content-center mx-5 fst-italic">
+                李文萍女士！出生于六朝古都（江苏南京）。自1996年以来，一直从事于美容美发行业至今。专注于女性形象设计、纹眉、纹眼线，等等。客户口碑良好，李文萍女士一直严格眼球自己，技术上精益求精。她的理念是：让更多人受益“美”的幸福😄😄。
             </Row>   
         </Col>
         <Col>
