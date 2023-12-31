@@ -1,7 +1,5 @@
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import TypeComp from "./TypeComp";
-import ServiceComp from "./ServiceComp";
-import AboutComp from "./AboutComp";
 import SliderComp from "./SliderComp";
 
 export default function MainComp({ mainRef }) {

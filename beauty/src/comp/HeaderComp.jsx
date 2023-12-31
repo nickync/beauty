@@ -17,7 +17,7 @@ export default function HeaderComp({mainRef, serviceRef, aboutRef}) {
         <Navbar expand='large' className="bg-header text-white">
         <Row className="w-100 align-items-center">
             <Col xs={4} className="px-0">
-                <Image src={logo} fluid style={{width:"5rem"}} className=""/>
+                <Image alt="logo" src={logo} fluid style={{width:"5rem"}} className=""/>
             </Col>
             <Col xs={4} className="px-0">
                 <Navbar.Brand className="text-white mx-auto fs-1 fst-italic fw-bolder"> 黑茶妹 </Navbar.Brand>

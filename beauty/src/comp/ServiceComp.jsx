@@ -39,7 +39,7 @@ export default function ServiceComp({serviceRef}) {
 
         <div >
             <div>
-                <Image src={offer} className="swiperImg" />
+                <Image alt="offer img" src={offer} className="swiperImg" />
             </div>
         </div>
 
