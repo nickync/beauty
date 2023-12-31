@@ -3,7 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import wechat from '../wechat-36.svg';
 import { Image } from 'react-bootstrap';
-import qr from '../asset/qr.png'
+// import qr from '../asset/qr.png'
+import qrhd from '../asset/wechat.png';
 
 export default function WechatComp() {
     const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ export default function WechatComp() {
       </div>
       <div>
         <Button variant="light" className="px-0 bg-transparent border-none btn border-0" onClick={handleShow}>
-          <Image src={wechat} alt='wechat' fluid style={{width:'2rem'}} className="me-1 wechat"/>
+          <Image src={wechat} alt='wechat ' fluid style={{width:'2rem'}} className="me-1 wechat"/>
         </Button>
       </div>
 
@@ -31,11 +32,11 @@ export default function WechatComp() {
               扫一扫了解更多详情，或长按识别二维码
             </div>
             <div className='my-2'>
-              <Image src={qr} />
+              <Image src={qrhd} className='w-100'/>
             </div>
-            <div className='my-2'>
+            {/* <div className='my-2'>
               电话：347-622-5571
-            </div>
+            </div> */}
           </Offcanvas.Body>
           </Offcanvas>
   </div>
